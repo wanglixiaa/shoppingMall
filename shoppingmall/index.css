@@ -1,0 +1,525 @@
+body {
+    margin: 0 0;
+    min-width: 900px;
+}
+
+#header {
+    background-image: url("images/headerbg.png");
+    background-repeat: repeat-x;
+    height: 105px;
+}
+
+.container {
+    width: 990px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo {
+    margin: 0 0 0 10px;
+    height: 80px;
+}
+
+.search {
+    width: 175px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 198px;
+}
+
+#inputSearch {
+    border: 1px solid #BABEBF;
+    color: #999999;
+    height: 17px;
+    width: 200px;
+    padding: 3px 6px 5px 6px;
+}
+
+#inputSearch.focus {
+    border: 1px solid #00A5FF;
+}
+
+#skin {
+    float: right;
+    margin: 10px;
+    padding: 4px;
+    width: 120px;
+}
+
+#skin li {
+    float: left;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("images/theme.gif");
+}
+
+#skin_0 {
+    background-position: 0px 0px;
+}
+
+#skin_1 {
+    background-position: 15px 0px;
+}
+
+#skin_2 {
+    background-position: 35px 0px;
+}
+
+#skin_3 {
+    background-position: 55px 0px;
+}
+
+#skin_4 {
+    background-position: 75px 0px;
+}
+
+#skin_5 {
+    background-position: 95px 0px;
+}
+
+#skin_0.selected {
+    background-position: 0px 15px;
+}
+
+#skin_1.selected {
+    background-position: 15px 15px;
+}
+
+#skin_2.selected {
+    background-position: 35px 15px;
+}
+
+#skin_3.selected {
+    background-position: 55px 15px;
+}
+
+#skin_4.selected {
+    background-position: 75px 15px;
+}
+
+#skin_5.selected {
+    background-position: 95px 15px;
+}
+
+
+/*导航样式开始*/
+
+.skin {
+    list-style: none;
+    float: right;
+}
+
+.skin li {
+    display: inline;
+}
+
+.mainNav {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    height: 37px;
+    line-height: 37px;
+    width: 990px;
+    z-index: 100;
+    background-color: #4A4A4A;
+}
+
+.mainNav .nav {
+    display: inline;
+    float: left;
+    margin-left: 25px;
+}
+
+.mainNav ul li {
+    float: left;
+    display: inline;
+    margin-right: 14px;
+    position: relative;
+    z-index: 100;
+}
+
+.mainNav ul li a {
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+}
+
+.mainNav ul li a:hover {
+    background: none;
+}
+
+
+/* 二级菜单 */
+
+.jnNav {
+    background: #FFFFFF;
+    border: 1px solid #B1B1B1;
+    border-top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 37px;
+    width: 474px;
+    z-index: 1000;
+    display: none;
+}
+
+.jnNav .subitem {
+    float: left;
+    height: auto !important;
+    min-height: 100px;
+    padding: 10px 12px;
+    width: 450px;
+}
+
+.jnNav .subitem dl {
+    border-top: 1px dashed #C4C4C4;
+    overflow: hidden;
+    padding: 8px 0;
+    float: left;
+}
+
+.jnNav .subitem .fore {
+    border-top-style: none;
+    padding-top: 0;
+}
+
+.jnNav .subitem dt {
+    float: left;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 4px 3px;
+    text-align: center;
+    width: 76px;
+}
+
+.jnNav .subitem dt a {
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0;
+}
+
+.jnNav .subitem dd {
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    width: 364px;
+}
+
+.jnNav .subitem em {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    font-style: normal;
+    height: 14px;
+    line-height: 14px;
+    margin: 5px 0;
+    padding: 0 8px;
+}
+
+.jnNav .subitem em a {
+    color: #666666;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.jnNav .subitem em.noborder {
+    border-right: 0 none;
+}
+
+#content {
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+
+.janeshop {
+    height: 560px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+#jnCatalog {
+    float: left;
+    height: 560px;
+    margin: 0 11px 0 0;
+    overflow: hidden;
+    width: 187px;
+}
+
+#jnCatalog h2 {
+    background-color: #6e6e6e;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 13px;
+}
+
+#jnCatainfo {
+    border: 1px solid #6e6e6e;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    height: 524px;
+    overflow: hidden;
+    padding: 5px 10px 0;
+    width: 165px;
+}
+
+#jnCatainfo h3 {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 24px;
+    width: 164px;
+}
+
+#jnCatainfo ul {
+    float: left;
+    padding: 0 2px 8px;
+    margin: 0;
+}
+
+#jnCatainfo li {
+    float: left;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    width: 79px;
+    overflow: hidden;
+}
+
+#jnCatainfo li a {
+    color: #444444;
+    text-decoration: none;
+}
+
+#jnCatainfo li a.promoted {
+    color: #F9044E;
+}
+
+#jnCatainfo li .hot {
+    background: url("images/hot.gif") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    position: absolute;
+    width: 21px;
+}
+
+#jnImageroll {
+    height: 320px;
+    width: 550px;
+    margin: 0 11px 0 0;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+#jnImageroll img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#jnImageroll div {
+    bottom: 0;
+    position: absolute;
+    float: left;
+}
+
+#jnImageroll a {
+    background-color: #444444;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    height: 32px;
+    margin-right: 1px;
+    padding: 5px 15px;
+    text-align: center;
+    width: 79px;
+}
+
+#jnImageroll div a:hover {
+    text-decoration: none;
+}
+
+#jnImageroll div a em {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    width: 79px;
+}
+
+#jnImageroll .last {
+    margin: 0;
+    width: 80px;
+}
+
+#jnImageroll a.chos {
+    background: url("../images/adindex.gif") no-repeat center 39px #37A7D7;
+    color: #FFFFFF;
+}
+
+#jnNotick {
+    float: left;
+    height: 321px;
+    width: 230px;
+}
+
+#jnMiaosha {
+    float: left;
+    height: 176px;
+    margin-bottom: 10px;
+    width: 230px;
+}
+
+#jnNoticeInfo {
+    float: left;
+    border: 1px solid #dfdfdf;
+    height: 133px;
+    overflow: hidden;
+    width: 228px;
+}
+
+#jnNoticeInfo h2 {
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #dfdfdf;
+    text-indent: 12px;
+}
+
+#jnNoticeInfo ul {
+    float: left;
+    padding: 6px 2px 0 12px;
+}
+
+#jnNoticeInfo li {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#jnNoticeInfo li a {
+    color: #666666;
+}
+
+#tooltip {
+    position: absolute;
+    border: 1px solid #333;
+    background: #f7f5d1;
+    padding: 1px;
+    color: #333;
+    display: none;
+}
+
+#jnBrand {
+    width: 790px;
+    height: 230px;
+    margin: 10px 0 0;
+    float: left;
+}
+
+#jnBrandTab {
+    width: 790px;
+    height: 29px;
+    margin: 0;
+    border: 1px solid #e4e4e4;
+    position: relative;
+}
+
+#jnBrandTab h2 {
+    position: absolute;
+    left: 0;
+    line-height: 20px;
+    height: 20px;
+    width: 100px;
+}
+
+#jnBrandTab ul {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#jnBrandTab ul li {
+    float: left;
+    margin: 0px 10px 0 0;
+}
+
+#jnBrandTab ul li a {
+    background-color: #e4e4e4;
+    color: #000000;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+#jnBrandContent {
+    float: left;
+    height: 188px;
+    overflow: hidden;
+    margin: 8px 5px;
+    width: 790px;
+    position: relative;
+}
+
+#jnBrandList {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3200px;
+}
+
+#jnBrandList li {
+    position: relative;
+    float: left;
+    height: 188px;
+    padding: 0 5px;
+    width: 185px;
+}
+
+#jnBrandList li a {
+    height: 0;
+    width: 0;
+}
+
+#jnBrandList li span {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #EFEFEF;
+    color: #666666;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    width: 183px;
+    left: 5px;
+}
+
+#jnBrandList li span a {
+    color: #666666;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 990px;
+    padding: 18px 0;
+    color: #666666;
+}
+
+.hoot {
+    background: url("images/hot.gif") no-repeat;
+    height: 16px;
+    position: absolute;
+    width: 21px;
+}
